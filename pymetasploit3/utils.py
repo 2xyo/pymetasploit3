@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from optparse import OptionParser
-import msgpack
+import umsgpack
 
 __all__ = [
     'parseargs',
@@ -37,7 +37,7 @@ def convert(data):
     return data
 
 def encode(data):
-    return msgpack.packb(data, use_bin_type=True)
+    return umsgpack.packb(data)
 
 def decode(data):
-    return msgpack.unpackb(data, raw=False)
+    return umsgpack.unpackb(data)
