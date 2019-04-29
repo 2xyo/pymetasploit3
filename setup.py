@@ -21,7 +21,7 @@ setup(
         'pymetasploit3/scripts/pymsfrpc.py'
     ],
     install_requires=[
-        'msgpack',
+        'u-msgpack-python',
         'requests'
     ],
     url='https://github.com/DanMcInerney/pymetasploit3',
