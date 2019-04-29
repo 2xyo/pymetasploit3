@@ -37,7 +37,7 @@ def convert(data):
     return data
 
 def encode(data):
-    return msgpack.packb(data)
+    return msgpack.packb(data, use_bin_type=True)
 
 def decode(data):
-    return msgpack.unpackb(data)
+    return msgpack.unpackb(data, raw=False)
